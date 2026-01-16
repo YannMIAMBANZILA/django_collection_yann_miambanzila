@@ -1,0 +1,11 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+<div id="content-main">
+    <h1>Statistiques de la Collection</h1>
+    <div style="background: white; padding: 20px; border-radius: 8px; text-align: center;">
+        <img src="data:image/png;base64,{{ chart }}" alt="Graphique des marques" style="max-width: 100%;">
+    </div>
+    <br>
+    <a href="../" class="button" style="background: #79aec8;">Retour à la liste</a>
+</div>
+{% endblock %}
