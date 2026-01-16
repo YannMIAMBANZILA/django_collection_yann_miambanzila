@@ -1,0 +1,10 @@
+services:
+  db:
+    image: gvenzl/oracle-free:latest
+    container_name: oracle_db
+    ports:
+      - "1521:1521"
+    environment:
+      - ORACLE_PASSWORD=YourStrongPassword123
+      - APP_USER=django_user
+      - APP_USER_PASSWORD=django_pass
